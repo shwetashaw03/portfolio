@@ -74,7 +74,7 @@ $(function () {
 		},
 	});
 
-	$("#instafeed").owlCarousel({
+	$("#instaFeedSlider").owlCarousel({
 		items: 1,
 		loop: true,
 		autoplay: true,
