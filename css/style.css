@@ -57,9 +57,9 @@ table th, table td {padding: 10px 12px;	vertical-align: top; border: 1px solid #
 
 /* SECTION_HEADING
 ----------------------*/
-.section{width: 100%; padding: 50px 0 50px;	position: relative;}
+.section{width: 100%; padding: 50px 0 50px;	position: relative;min-height: 100vh;}
 .section:before{position: absolute;	content: ""; display: block; bottom: 0; left: 0; right: 0; top: 0; z-index: -1;}
-h1, h2, h3, h4, h5, h6 {font-family: 'Kaushan Script', cursive;color: #ffff3b;font-weight: 700;}
+h1, h2, h3, h4, h5, h6 {font-family: 'Kaushan Script', cursive;color: #000;font-weight: 700;}
 h2{font-size: 36px;}
 h3{font-size: 28px;}
 h4{font-size: 24px;}
@@ -68,7 +68,7 @@ h6{font-size: 18px;}
 .heading{
     font-family: 'Kaushan Script', cursive;
     font-weight: 700;
-    color: #ffff3b;
+    color: #000;
     text-align: center;
 	font-size: 36px;
     line-height: 40px;
@@ -430,7 +430,7 @@ a.mob-toggle {
     .banner img {
         max-width: unset;
         width: 100%;
-        height: 500px;
+        height: 100vh;
         object-fit: cover;
     }
 }
@@ -493,7 +493,7 @@ a.mob-toggle {
     z-index: 2;
 }
 .youtubeWrap {
-    background: #FF0000;
+    background: #F00;
 }
 .youtube-list iframe{
     margin-top: 15px;
@@ -516,4 +516,36 @@ a.mob-toggle {
 }
 .instafeed{
     background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.facebookfeed {
+    background: #0370ce;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.btn {
+    background: #000;
+    color: #fff;
+    min-width: 180px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-size: 18px;
+    margin-top: 25px;
+}
+.facebookfeed iframe, .instafeed iframe {
+    background: #fff;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.intro figure{
+    margin: 25px 0;
 }
